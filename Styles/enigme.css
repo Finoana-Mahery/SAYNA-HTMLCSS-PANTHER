@@ -180,6 +180,9 @@
     
 }
 
+.case_left_down>form>input[type="button"]:hover{
+    box-shadow:0 0 30px #9e91b7;
+}
 .circl2{
     background-image: url(../Images/Enigme/Pantherenigme2.png);
     background-repeat: no-repeat;

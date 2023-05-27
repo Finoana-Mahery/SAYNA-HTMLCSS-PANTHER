@@ -14,6 +14,39 @@
     src: url('../Fonts/wakandaforever-regular.ttf');
 }
 
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  h1,.contenue{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.1s;
+    animation-fill-mode: forwards;
+  }
+  h2{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+  }
+  p,li,span,a,.sp{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+  }
+  
+
 body{
     background-image: url(../Images/All_pages/arrière_plan.png);
     background-size: cover;
@@ -32,6 +65,7 @@ main{
     
     height: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 main .contenaire{
    background-color: rgba(8, 0, 255, 0);
@@ -59,6 +93,16 @@ main .contenaire{
     gap: 5px;
     background-color: rgba(255, 0, 0, 0);
    
+}
+.logo:hover{
+    cursor: pointer;
+    
+}
+.logo:hover>a>img{
+    filter: brightness(75%) sepia(80) saturate(15) hue-rotate(200deg);
+    
+    
+    
 }
 .contenaire>nav>ul{
     display: flex;
@@ -115,17 +159,31 @@ nav #ferm{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     justify-content: center;
     
 }
 .menu>ul>li{
     width: 100%;
-   
+}
+.menu>ul>li>a{
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.menu>ul>li>a:hover{
+    background-color: #9e91b7;
+}
+.contenaire>nav>ul>li{
+    width: 100%;
+    
     text-align: center;
     padding: 10px 0;
 }
-.menu>ul>li:hover{
-    background-color: #9e91b7;
+.contenaire>nav>ul>li:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 /******************************************************************/
@@ -165,7 +223,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   cursor: pointer;
+   transition: transform 0.5s ease-in-out;
+    
+}
+.marvel:hover{
+    transform: scale(1.1);
     
 }
 .marvel>img{
@@ -223,6 +286,10 @@ footer{
     flex-direction: column;
     gap: 5px;
 }
+.page_list>a:hover{
+    text-decoration:underline;
+    
+}
 .text_footer{
     display: flex;
     gap:25px;
@@ -233,6 +300,12 @@ footer{
     display: flex;
     list-style: circle;
     gap: 25px;
+}
+.icon>a>img{
+    transition: transform 0.2s ease-in-out;
+}
+.icon>a>img:hover{
+    transform: scale(1.1);
 }
 /*****************************************************************/
 .bar_content{
@@ -271,6 +344,9 @@ height: 100%;
     margin-top: 25px;
     background-color: #9e91b700;
 
+}
+.boit_icone>a>img:hover{
+    filter: brightness(200%) hue-rotate(0deg);
 }
 /*****************************************************/
 @media screen and (max-width:1000px){

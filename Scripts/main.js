@@ -44,6 +44,16 @@ function handleResize() {
   // Exécution initiale pour appliquer le style en fonction de la largeur de l'écran au chargement de la page
   handleResize();
 
+/*************************************************************************** */
+function envoyer(){
+    let content_formul=document.getElementsByClassName("content_formul");
+    console.log(content_formul);
+    content_formul[0].innerHTML="";
+    let message=document.createElement('p');
+    message.style.fontSize="20px";
+    message.textContent="MESSAGE ENVOYER";
+    content_formul[0].appendChild(message);
+}
 
 
 
