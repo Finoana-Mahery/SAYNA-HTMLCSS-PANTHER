@@ -1,3 +1,4 @@
+/*****************OUVERTURE & FERMETURE Menu*******/
 let bt_menu= document.querySelector("nav #ouvrt");
 
 
@@ -44,7 +45,7 @@ function handleResize() {
   // Exécution initiale pour appliquer le style en fonction de la largeur de l'écran au chargement de la page
   handleResize();
 
-/*************************************************************************** */
+/*********************************envoye_formulaire****************************************** */
 function envoyer(){
     let content_formul=document.getElementsByClassName("content_formul");
     console.log(content_formul);

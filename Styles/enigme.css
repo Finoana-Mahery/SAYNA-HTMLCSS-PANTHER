@@ -1,10 +1,12 @@
+/***IMPORTATION du style principale*/
 @import url(main.css);
-/***********************************************/
+
+/************couleur_selection_menu_page********************/
 .contenaire>nav>ul>li:nth-of-type(3){
     color:#9e91b7 ;
     text-decoration: underline;
 }
-/**********************welcome*****************/
+/**********************welcome******************************/
 .welcome{
     display: flex;
     justify-content:end;
@@ -16,7 +18,6 @@
     background-position-y:70% ;
     background-position-x:5% ;
     padding: 0;
-
     width: 100%;
     height: 590px;
 }

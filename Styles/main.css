@@ -1,6 +1,11 @@
 
-
+/*
+* main.css contient les styles principale (navbar, footer, body,...)
+*/
+/***************POLICE-du-site********************/
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 @font-face {
     font-family: 'Panthera';
     src: url('../Fonts/PantheraRegular-MVZ9J.ttf');
@@ -13,7 +18,7 @@
     font-family: 'Wakanda_forever';
     src: url('../Fonts/wakandaforever-regular.ttf');
 }
-
+/*********************animation-du-site*********************************/
 @keyframes slideIn {
     from {
       opacity: 0;
@@ -24,6 +29,7 @@
       transform: translateX(0);
     }
   }
+  /**************************************************************************/
   h1,.contenue{
     opacity: 0;
     transform: translateX(-100%);
@@ -186,7 +192,7 @@ nav #ferm{
     text-decoration: underline;
 }
 
-/******************************************************************/
+/**************************FOOTER****************************************/
 footer{
     width: 100%;
     height: auto;
@@ -307,7 +313,7 @@ footer{
 .icon>a>img:hover{
     transform: scale(1.1);
 }
-/*****************************************************************/
+/*********************float bar left********************************************/
 .bar_content{
     display: flex;
     position: fixed;

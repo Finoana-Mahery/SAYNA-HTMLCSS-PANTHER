@@ -1,5 +1,7 @@
+/***IMPORTATION du style principale*/
 @import url(main.css);
-/********************************/
+
+/************couleur_selection_menu_page********************/
 .contenaire>nav>ul>li:nth-of-type(1){
     color:#9e91b7 ;
     text-decoration: underline;
@@ -57,7 +59,7 @@
     overflow: hidden;
     background-color: rgba(127, 255, 212, 0);
 }
-/**********************************************************/
+/************************Galerie*********************************/
 .galerie{
     display: flex;
     background-color: #07338c;
@@ -107,7 +109,7 @@
     border-radius: 100%;
     cursor: pointer;
 }
-/********************************************/
+/********************Bio************************/
 .bio{
     margin-top: 100px;
     display: flex;
@@ -205,7 +207,7 @@
    margin: 10px 0px;
 
 }
-/*******************************************/
+/*******************Formulaire************************/
 .formulaire{
     background-image: url(../Images/Accueil/Pantherhome7.png);
     background-size:contain;

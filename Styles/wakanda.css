@@ -1,6 +1,7 @@
-
+/***IMPORTATION du style principale*/
 
 @import url(main.css);
+/************couleur_selection_menu_page********************/
 .contenaire>nav>ul>li:nth-of-type(2){
     color:#9e91b7 ;
     text-decoration: underline;
@@ -61,7 +62,7 @@ main .contenaire{
 .contenaire>nav>ul>li:hover{
     color:#9e91b7 ;
 }*/
-/***********************************************************/
+/**********************content_page*************************************/
 .welcome{
     display: flex;
     justify-content:start;
@@ -113,7 +114,7 @@ main .contenaire{
     overflow: hidden;
     background-color: rgba(127, 255, 212, 0);
 }
-/***********************************************************/
+/***************************bio********************************/
 .bio{
     
     display: flex;
